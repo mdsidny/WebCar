@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Racing Game</title>
+    <link rel="stylesheet" href="Webcar1.css" />
+</head>
+<body>
+    <header>
+        <h1>Car Racing Game</h1>
+    </header>
+    <main>
+        <section id="game-info">
+            <h2>Game Info</h2>
+            <p>Compete with your friends, AI, or just yourself in this exciting car racing game!</p>
+        </section>
+
+        <section id="game-mode-selection">
+            <h2>Select Game Mode</h2>
+            <button id="single-player">Single Player</button>
+            <button id="multiplayer">Multiplayer</button>
+            <button id="vs-ai">Versus AI</button>
+        </section>
+
+        <section id="car-selection">
+            <h2>Select Your Car</h2>
+            <div class="car-option" data-car="car1">Car 1</div>
+            <div class="car-option" data-car="car2">Car 2</div>
+        </section>
+
+        <section id="track-selection">
+            <h2>Select Track</h2>
+            <div class="track-option" data-track="track1">Track 1</div>
+            <div class="track-option" data-track="track2">Track 2</div>
+        </section>
+
+        <section id="game-controls">
+            <h2>Controls</h2>
+            <p>Use the arrow keys to steer, accelerate, and brake.</p>
+        </section>
+
+        <section id="start-game">
+            <button id="start-game-button">Start Game</button>
+        </section>
+    </main>
+    <footer>
+        <p>Car Racing Game &copy; 2023</p>
+    </footer>
+    <script>
+        document.getElementById('start-game-button').addEventListener('click', function () {
+            window.location.href = "game.html"; // Redirect to the game page
+        });
+    </script>
+</body>
+</html>

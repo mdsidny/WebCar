@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Racing Game - Multiplayer</title>
+    <link rel="stylesheet" href="Webcar1.css" />
+</head>
+<body>
+    <header>
+        <h1>Car Racing Game - Multiplayer</h1>
+    </header>
+    <main>
+        <section id="multiplayer-info">
+            <h2>Multiplayer Mode</h2>
+            <p>Challenge your friends in this exciting multiplayer mode!</p>
+        </section>
+
+        <section id="player-selection">
+            <h2>Select Players</h2>
+            <div class="player-option" data-player="player1">Player 1</div>
+            <div class="player-option" data-player="player2">Player 2</div>
+            <div class="player-option" data-player="player3">Player 3</div>
+            <div class="player-option" data-player="player4">Player 4</div>
+        </section>
+
+        <section id="start-multiplayer-game">
+            <button id="start-multiplayer-game-button">Start Multiplayer Game</button>
+        </section>
+    </main>
+    <footer>
+        <p>Car Racing Game &copy; 2023</p>
+    </footer>
+    <script>document.getElementById('start-multiplayer-game-button').addEventListener('click', function () {
+            window.location.href = "multiplayer-game.html"; // Redirect to the multiplayer game page
+        });</script>
+</body>
+</html>
